@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estação Meteorológica</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="main-card">
+      <div class="temperature" id="temp">--°C</div>
+      <div class="weather-icon" id="icon">☀️</div>
+      <div class="condition" id="condition">Carregando...</div>
+  </div>
+
+  <div class="info-grid">
+
+      <div class="card">
+          <h3>💧 Umidade</h3>
+          <p id="humidity">-- %</p>
+      </div>
+
+      <div class="card">
+          <h3>🌬️ Vento</h3>
+          <p id="wind">-- m/s</p>
+      </div>
+
+      <div class="card">
+          <h3>📊 Pressão</h3>
+          <p id="pressure">-- hPa</p>
+      </div>
+
+      <div class="card">
+          <h3>🌫️ Qualidade do Ar</h3>
+          <p id="air">--</p>
+      </div>
+
+  </div>
+
+  <div class="status-section">
+      <div class="status-card">
+          <h3>🚗 Condição de Condução</h3>
+          <p id="driveStatus">--</p>
+      </div>
+
+      <div class="status-card">
+          <h3>🏃 Caminhada / Corrida</h3>
+          <p id="runStatus">--</p>
+      </div>
+  </div>
+
+  <div class="chart-card">
+      <h3>Gráfico Temperatura</h3>
+      <canvas id="tempChart"></canvas>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

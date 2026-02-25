@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    padding:20px;
+}
+
+.main-card{
+    margin-bottom:20px;
+}
+
+.temperature{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.weather-icon{
+    font-size:70px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.card{
+    background: rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:20px;
+    backdrop-filter: blur(10px);
+}
+
+.status-section{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.status-card{
+    background: rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:20px;
+    width:250px;
+}
+
+.chart-card{
+    margin-top:20px;
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    color:black;
+}
